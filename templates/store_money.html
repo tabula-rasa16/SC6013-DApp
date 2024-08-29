@@ -41,14 +41,29 @@
             font-size: 16px;
         }
 
-        button {
+        button, .backToMainBtn   {
             background-color: #007bff;
             color: white;
             border: none;
             cursor: pointer;
         }
 
-        button:hover {
+        /* .backToMainBtn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        } */
+
+        /* .backToMainBtn:hover {
+            background-color: #0056b3;
+        }  */
+
+        button:hover, .backToMainBtn:hover {
+            background-color: #0056b3;
+        }
+
+        hover {
             background-color: #0056b3;
         }
 
@@ -83,6 +98,9 @@
         <input type="number" id="moneyInput" placeholder="Enter amount to store">
         <button class="btn" onclick="storeValue()">Store Value</button>
         <button class="btn" onclick="getValue()">Get Stored Value</button>
+        <form action="/" method="post">
+            <input class="backToMainBtn" type="submit" value="Main">
+        </form>
         <p id="storedValue"></p>
         <p id="status"></p>
     </div>
